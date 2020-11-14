@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^23.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.0",
+    "@uiw/react-md-editor": "^1.14.5",
     "@zeit/next-css": "^1.0.1",
     "classnames": "^2.2.6",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
     "lodash": "^4.17.19",
-    "next": "^9.5.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "markdown-it": "^12.0.2",
+    "next": "^9.5.5",
+    "prismjs": "^1.22.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-draft-wysiwyg": "^1.14.5",
+    "react-simple-code-editor": "^0.11.0",
+    "rich-markdown-editor": "^11.0.6",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

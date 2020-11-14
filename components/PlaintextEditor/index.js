@@ -1,16 +1,35 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import dynamic from "next/dynamic";
+import css from './style.module.css';
+import path from "path";
+import { Editor, EditorState, RichUtils} from 'draft-js';
 
-import css from './style.css';
 
 function PlaintextEditor({ file, write }) {
-  console.log(file, write);
+ 
+  const [ text, setText ] = useState("");
+
+  useEffect(() => {
+		file.text().then((res) => {
+			console.log(res);
+			setText(res);
+		});
+  });
+
+ 
+  console.log(text);
+
+  
+  
   return (
-    <div className={css.editor}>
-      <h3>TODO</h3>
-      <i>text/plain</i>
-    </div>
-  );
+
+		<div className={css.editor}>
+			<div className={css.title}>{path.basename(file.name)}</div>
+<textarea className={css.content} value={text}></textarea>
+
+		</div>
+	);
 }
 
 PlaintextEditor.propTypes = {

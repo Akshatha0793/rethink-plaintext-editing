@@ -9,7 +9,7 @@ import { listFiles } from '../files';
 // Used below, these need to be registered
 import MarkdownEditor from '../MarkdownEditor';
 import PlaintextEditor from '../components/PlaintextEditor';
-
+import JSEditor from '../components/JSEditor/index';
 import IconPlaintextSVG from '../public/icon-plaintext.svg';
 import IconMarkdownSVG from '../public/icon-markdown.svg';
 import IconJavaScriptSVG from '../public/icon-javascript.svg';
@@ -99,8 +99,9 @@ Previewer.propTypes = {
 
 // Uncomment keys to register editors for media types
 const REGISTERED_EDITORS = {
-  // "text/plain": PlaintextEditor,
-  // "text/markdown": MarkdownEditor,
+  "text/plain": PlaintextEditor,
+  "text/markdown": MarkdownEditor,
+  'text/javascript': JSEditor
 };
 
 function PlaintextFilesChallenge() {
@@ -114,6 +115,8 @@ function PlaintextFilesChallenge() {
 
   const write = file => {
     console.log('Writing soon... ', file.name);
+    console.log(files);
+
 
     // TODO: Write the file to the `files` array
   };
