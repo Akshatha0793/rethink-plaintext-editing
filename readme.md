@@ -12,3 +12,15 @@ To run the challenge:
 Once complete, please email us a link to your forked repo with clean, tested code. We will use Chrome to run it.
 
 - Rethink Engineering
+
+
+Made use of eact-simple-code-editor package to edit JS data
+Made use of rich-markdown-editor package for editiing files of MD type
+A text area is used to edit plain text
+
+Enhancements to be done: 
+  1. Add a save content and save the file and update the changes
+  2. Include preview before saving
+  3. Include draft.js or any other package to add better features to plain text editor
+  4. Include color highlights on JS editor.
+
